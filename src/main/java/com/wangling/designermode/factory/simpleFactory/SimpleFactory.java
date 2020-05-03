@@ -12,6 +12,7 @@ public class SimpleFactory {
 
         System.out.println("测试");
         System.out.println("second test");
+        System.out.println("third test new branch");
 
         if("Java".equals(name)){
             return new JavaCourse();
