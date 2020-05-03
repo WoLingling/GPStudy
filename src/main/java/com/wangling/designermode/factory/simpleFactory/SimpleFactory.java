@@ -11,7 +11,7 @@ public class SimpleFactory {
     public ICourse create(String name){
 
         System.out.println("测试");
-        System.out.println("第二次测试：master提交");
+
 
         if("Java".equals(name)){
             return new JavaCourse();
@@ -20,6 +20,10 @@ public class SimpleFactory {
         }else if ("第二次测试的第二个提交".equals(name)){
             System.out.println("目的是让先不更新直接修改提交给产生冲突");
             return new JavaCourse();
+        }else if ("第二次测试的第三个提交".equals(name)) {
+            System.out.println("目的是让先不更新直接修改提交给产生冲突");
+            return new PythonCourse();
+
         }
         else {
             return new JavaCourse();
