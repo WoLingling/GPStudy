@@ -17,6 +17,9 @@ public class SimpleFactory {
             return new JavaCourse();
         }else if ("Python".equals(name)){
             return new PythonCourse();
+        }else if ("第二次测试的第二个提交".equals(name)){
+            System.out.println("目的是让先不更新直接修改提交给产生冲突");
+            return new JavaCourse();
         }
         else {
             return new JavaCourse();
