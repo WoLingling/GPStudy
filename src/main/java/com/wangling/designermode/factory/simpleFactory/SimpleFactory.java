@@ -11,6 +11,7 @@ public class SimpleFactory {
     public ICourse create(String name){
 
         System.out.println("测试");
+        System.out.println("第二次测试：master提交");
 
         if("Java".equals(name)){
             return new JavaCourse();
